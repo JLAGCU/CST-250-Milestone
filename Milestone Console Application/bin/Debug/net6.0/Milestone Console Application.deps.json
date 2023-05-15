@@ -1,0 +1,33 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Milestone Console Application/1.0.0": {
+        "runtime": {
+          "Milestone Console Application.dll": {}
+        }
+      },
+      "Milestone Class Library/1.0.0": {
+        "runtime": {
+          "Milestone Class Library.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Milestone Console Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Milestone Class Library/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
