@@ -11,3 +11,8 @@ Console Application running:
 UML Class Diagram:
 
 ![alt text](https://github.com/JLAGCU/CST-250-Milestone/blob/main/Images/Milestone%20UML.png?raw=true)
+
+
+Flow Chart:
+
+![alt text](https://github.com/JLAGCU/CST-250-Milestone/blob/main/Images/Milestone%20Flow%20Chart.png?raw=true)
