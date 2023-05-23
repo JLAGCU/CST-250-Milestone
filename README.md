@@ -5,7 +5,7 @@ In this milestone, students will create an interactive playable version of the M
 
 Console Application running:
 
-![alt text](https://github.com/JLAGCU/CST-250-Milestone/blob/main/Images/Console%20App.png?raw=true)
+![alt text](https://raw.githubusercontent.com/JLAGCU/CST-250-Milestone/7076031f90a4443f0293f71678bbad6575ab1e87/Images/Console%20App.png)
 
 
 UML Class Diagram:
