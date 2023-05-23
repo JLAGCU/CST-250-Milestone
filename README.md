@@ -1,7 +1,7 @@
 # CST-250-Milestone
- CST-250 Milestone
+## CST-250 Milestone 2
 
- In this milestone, students will create three classes (cell, board, and program) for a Minesweeper game.
+In this milestone, students will create an interactive playable version of the Minesweeper game.
 
 Console Application running:
 
