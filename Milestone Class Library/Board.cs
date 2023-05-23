@@ -92,5 +92,20 @@ namespace CST_250_Milestone
                 }
             }
         }
+        public bool IsAllNonBombCellsRevealed() // method to check if all non-bomb cells have been revealed
+        {
+            for (int row = 0; row < size; row++) // loop through the rows of the grid
+            {
+                for (int column = 0; column < size; column++) // loop through the columns of the grid
+                {
+                    Cell currentCell = grid[row, column]; // get the current cell
+                    if (!currentCell.Live && !currentCell.Visited) // if the cell is non-bomb and not visited
+                    {
+                        return false; // return false indicating not all non-bomb cells are revealed
+                    }
+                }
+            }
+            return true; // return true indicating all non-bomb cells are revealed
+        }
     }
 }
