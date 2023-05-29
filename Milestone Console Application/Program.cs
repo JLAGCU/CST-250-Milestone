@@ -10,6 +10,21 @@ namespace MilestoneConsoleApplication
             board.SetupLiveNeighbors(); // randomly set "live" cells
             board.CalculateLiveNeighbors(); // calculate the number of live neighbors for each cell
 
+            Console.WriteLine("============DEBUG============");
+            Console.WriteLine("Live bomb locations:");
+            for (int row = 0; row < board.Size; row++)
+            {
+                for (int column = 0; column < board.Size; column++)
+                {
+                    if (board.Grid[row, column].Live)
+                    {
+                        Console.WriteLine("Row: {0}, Column: {1}", row, column);
+                    }
+                }
+            }
+            Console.WriteLine("==========END DEBUG==========");
+            Console.WriteLine("");
+
             bool endGame = false; // variable to track the endgame condition
 
             while (!endGame) // loop until the endgame condition is met
@@ -28,6 +43,8 @@ namespace MilestoneConsoleApplication
                 {
                     Console.WriteLine("Invalid input. Please enter a number between 0 and {0}.", board.Size - 1);
                 }
+
+                board.FloodFill(row, column); // Apply flood fill algorithm starting from the selected cell
 
                 board.Grid[row, column].Visited = true; // Mark the selected cell as visited
 
@@ -83,58 +100,58 @@ namespace MilestoneConsoleApplication
             }
             Console.WriteLine();
         }
-        static void PrintBoardDuringGame(Board board) // Prints the current state of the board during the game
+        static void PrintBoardDuringGame(Board board)
         {
-            Console.WriteLine("Current Board State:"); // Display a heading indicating the current state of the board
+            Console.WriteLine("Current Board State:");
             Console.WriteLine();
             Console.Write("  ");
             for (int column = 0; column < board.Size; column++)
             {
-                Console.Write(column + " "); // Display the column numbers at the top of the board
+                Console.Write(column + " ");
             }
             Console.WriteLine();
             Console.Write("  ");
             for (int column = 0; column < board.Size; column++)
             {
-                Console.Write("--"); // Display dashes to separate the column numbers from the board cells
+                Console.Write("--");
             }
             Console.WriteLine();
 
-            for (int row = 0; row < board.Size; row++) // Iterate over each row in the board
+            for (int row = 0; row < board.Size; row++)
             {
-                Console.Write(row + "|"); // Display the row number at the beginning of each row
+                Console.Write(row + "|");
                 for (int column = 0; column < board.Size; column++)
                 {
-                    Cell cell = board.Grid[row, column]; // Get the cell at the current row and column
+                    Cell cell = board.Grid[row, column];
 
-                    if (cell.Visited) // If the cell has been visited
+                    if (cell.Visited)
                     {
-                        if (cell.Live) // If the cell is "live", print "X"
+                        if (cell.Live)
                         {
-                            Console.Write("X "); // Display "X" for a visited live cell
+                            Console.Write("X ");
                         }
-                        else // Otherwise, print the number of live neighbors the cell has or an empty square
+                        else
                         {
                             if (cell.LiveNeighborCount == 0)
                             {
-                                Console.Write("- "); // Display "-" for a visited non-live cell with no live neighbors
+                                Console.Write("- "); // Display "-" for a visited cell with no live neighbors
                             }
                             else
                             {
-                                Console.Write(cell.LiveNeighborCount + " "); // Display the number of live neighbors for a visited non-live cell
+                                Console.Write(cell.LiveNeighborCount + " ");
                             }
                         }
                     }
-                    else if (board.Grid[row, column].Live) // If the cell has not been visited and it is live, print "?"
+                    else if (board.Grid[row, column].Live)
                     {
-                        Console.Write("? "); // Display "?" for an unvisited live cell
+                        Console.Write("? ");
                     }
-                    else // If the cell has not been visited and it is not live, print a question mark
+                    else
                     {
-                        Console.Write("? "); // Display "?" for an unvisited non-live cell
+                        Console.Write("? ");
                     }
                 }
-                Console.WriteLine(); // Move to the next line after printing all cells in the row
+                Console.WriteLine();
             }
             Console.WriteLine();
         }

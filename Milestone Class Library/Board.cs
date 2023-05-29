@@ -107,5 +107,33 @@ namespace CST_250_Milestone
             }
             return true; // return true indicating all non-bomb cells are revealed
         }
+        public void FloodFill(int row, int column)
+        {
+            if (row < 0 || row >= size || column < 0 || column >= size)
+            {
+                return; // Return if the given row or column is out of bounds
+            }
+
+            Cell currentCell = grid[row, column]; // Get the current cell
+
+            if (currentCell.Visited || currentCell.Live)
+            {
+                return; // Return if the current cell has already been visited or is a live cell
+            }
+
+            currentCell.Visited = true; // Mark the current cell as visited
+
+            if (currentCell.LiveNeighborCount > 0)
+            {
+                return; // Return if the current cell has live neighbors
+            }
+
+            // Recursively call floodFill on the neighboring cells
+            FloodFill(row - 1, column); // Top
+            FloodFill(row + 1, column); // Bottom
+            FloodFill(row, column - 1); // Left
+            FloodFill(row, column + 1); // Right
+        }
+
     }
 }
