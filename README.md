@@ -1,7 +1,7 @@
 # CST-250-Milestone
-## CST-250 Milestone 2
+## CST-250 Milestone 4
 
-In this milestone, students will create an interactive playable version of the Minesweeper game.
+In this milestone, students will create a GUI version of the Minesweeper Game.
 
 Console Application running:
 
@@ -11,6 +11,41 @@ Console Application running:
 Console Application Victory Screen:
 
 ![alt text](https://github.com/JLAGCU/CST-250-Milestone/blob/main/Images/Console%20App%20Victory.png?raw=true)
+
+
+Windows Form Application Running: Difficulty Selection Form
+
+![alt text](https://github.com/JLAGCU/CST-250-Milestone/blob/main/Images/Windows%20Form%20Difficulty.png?raw=true)
+
+
+Windows Form Application Running: Grid Form (Easy)
+
+![alt text](https://github.com/JLAGCU/CST-250-Milestone/blob/main/Images/Windows%20Form%20Easy1.png?raw=true)
+
+
+Windows Form Application Running: Grid Form (Easy)
+
+![alt text](https://github.com/JLAGCU/CST-250-Milestone/blob/main/Images/Windows%20Form%20Easy2.png?raw=true)
+
+
+Windows Form Application Running: Grid Form (Moderate)
+
+![alt text](https://github.com/JLAGCU/CST-250-Milestone/blob/main/Images/Windows%20Form%20Moderate1.png?raw=true)
+
+
+Windows Form Application Running: Grid Form (Moderate)
+
+![alt text](https://github.com/JLAGCU/CST-250-Milestone/blob/main/Images/Windows%20Form%20Moderate2.png?raw=true)
+
+
+Windows Form Application Running: Grid Form (Difficult)
+
+![alt text](https://github.com/JLAGCU/CST-250-Milestone/blob/main/Images/Windows%20Form%20Difficult1.png?raw=true)
+
+
+Windows Form Application Running: Grid Form (Difficult)
+
+![alt text](https://github.com/JLAGCU/CST-250-Milestone/blob/main/Images/Windows%20Form%20Difficult2.png?raw=true)
 
 
 UML Class Diagram:
