@@ -1,0 +1,12 @@
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\DifficultyForm\bin\Debug\DifficultyForm.exe.config
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\DifficultyForm\bin\Debug\DifficultyForm.exe
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\DifficultyForm\bin\Debug\DifficultyForm.pdb
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\DifficultyForm\obj\Debug\DifficultyForm.csproj.AssemblyReference.cache
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\DifficultyForm\obj\Debug\DifficultyForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\DifficultyForm\obj\Debug\DifficultyForm.Properties.Resources.resources
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\DifficultyForm\obj\Debug\DifficultyForm.csproj.GenerateResource.cache
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\DifficultyForm\obj\Debug\DifficultyForm.csproj.CoreCompileInputs.cache
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\DifficultyForm\obj\Debug\DifficultyForm.exe
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\DifficultyForm\obj\Debug\DifficultyForm.pdb
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\DifficultyForm\obj\Debug\DifficultyForm.GridForm.resources
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\DifficultyForm\obj\Debug\DifficultyForm.DifficultyForm.resources

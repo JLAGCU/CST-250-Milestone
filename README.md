@@ -21,3 +21,8 @@ UML Class Diagram:
 Flow Chart:
 
 ![alt text](https://github.com/JLAGCU/CST-250-Milestone/blob/main/Images/Milestone%20Flow%20Chart.png?raw=true)
+
+
+Wireframe:
+
+![alt text](https://github.com/JLAGCU/CST-250-Milestone/blob/main/Images/Milestone%20Wireframe.png?raw=true)
