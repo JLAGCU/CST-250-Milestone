@@ -1,7 +1,7 @@
 # CST-250-Milestone
-## CST-250 Milestone 4
+## CST-250 Milestone 5
 
-In this milestone, students will create a GUI version of the Minesweeper Game.
+In this milestone, students will add the game play logic to their GUI application.
 
 Console Application running:
 

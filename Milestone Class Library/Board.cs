@@ -133,6 +133,12 @@ namespace CST_250_Milestone
             FloodFill(row + 1, column); // Bottom
             FloodFill(row, column - 1); // Left
             FloodFill(row, column + 1); // Right
+
+            // Now we add calls for the diagonal neighbors
+            FloodFill(row - 1, column - 1); // Top-Left
+            FloodFill(row + 1, column + 1); // Bottom-Right
+            FloodFill(row - 1, column + 1); // Top-Right
+            FloodFill(row + 1, column - 1); // Bottom-Left
         }
 
     }

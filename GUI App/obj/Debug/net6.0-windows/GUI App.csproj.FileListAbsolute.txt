@@ -1,0 +1,22 @@
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\GUI App.csproj.AssemblyReference.cache
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\GUI_App.Difficulty_Form.resources
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\GUI_App.Game_Form.resources
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\GUI App.csproj.GenerateResource.cache
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\GUI App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\GUI App.AssemblyInfoInputs.cache
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\GUI App.AssemblyInfo.cs
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\GUI App.csproj.CoreCompileInputs.cache
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\bin\Debug\net6.0-windows\GUI App.exe
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\bin\Debug\net6.0-windows\GUI App.deps.json
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\bin\Debug\net6.0-windows\GUI App.runtimeconfig.json
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\bin\Debug\net6.0-windows\GUI App.dll
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\bin\Debug\net6.0-windows\GUI App.pdb
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\bin\Debug\net6.0-windows\Milestone Class Library.dll
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\bin\Debug\net6.0-windows\Milestone Class Library.pdb
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\GUI App.csproj.CopyComplete
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\GUI App.dll
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\refint\GUI App.dll
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\GUI App.pdb
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\GUI App.genruntimeconfig.cache
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\ref\GUI App.dll
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\GUI_App.Properties.Resources.resources
