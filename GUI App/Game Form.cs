@@ -1,4 +1,5 @@
 ﻿using CST_250_Milestone;
+using Milestone_Class_Library;
 using System.Diagnostics;
 
 namespace GUI_App
@@ -8,15 +9,24 @@ namespace GUI_App
     {
         // gameBoard is a 2D grid of cells representing the Minesweeper game.
         private Board gameBoard;
+
         // buttonGrid is a 2D grid of buttons corresponding to the cells in the gameBoard.
         private Button[,] buttonGrid;
+
         // buttonSize is a constant that defines the size of the buttons in the buttonGrid.
         private const int buttonSize = 30;
+
         // stopwatch is used to measure the time taken by the player to win the game.
         private Stopwatch stopwatch;
 
+        // Reference to the high score form
+        private High_Score_Form highScoreForm;
+
+        // String to store the difficulty level of the current game
+        private string difficultyLevel;
+
         // Constructor initializes the game board and sets up the GUI.
-        public Game_Form(int size)
+        public Game_Form(int size, High_Score_Form highScoreForm, string difficultyLevel)
         {
             // Standard method call to setup the GUI components.
             InitializeComponent();
@@ -27,6 +37,10 @@ namespace GUI_App
 
             // Set the size of the form based on the number of buttons and their size.
             this.ClientSize = new Size(size * buttonSize, size * buttonSize);
+
+            // Save the high score form and difficulty level
+            this.highScoreForm = highScoreForm;
+            this.difficultyLevel = difficultyLevel;
 
             // Create and setup the buttons.
             for (int row = 0; row < size; row++)
@@ -84,8 +98,21 @@ namespace GUI_App
                     SetFlagsToMines();
                     stopwatch.Stop();
                     TimeSpan ts = stopwatch.Elapsed;
-                    MessageBox.Show($"You Win!\nTime elapsed: {ts.Minutes}:{ts.Seconds}.{ts.Milliseconds}");
+                    string elapsedTime = String.Format("{0}:{1}:{2}", 
+                        ts.Hours.ToString("00"),
+                        ts.Minutes.ToString("00"), 
+                        ts.Seconds.ToString("00"));
+                    MessageBox.Show($"You Win!\nTime elapsed: {elapsedTime}");
                     this.Close();
+
+                    // Prompt for the player's name
+                    string name = Prompt.ShowDialog("You Won! Please enter your name:", "Congratulations!");
+
+                    // Create a new PlayerStats object
+                    PlayerStats playerStats = new PlayerStats(name, difficultyLevel, elapsedTime);
+
+                    // Add the player's score to the high score form
+                    highScoreForm.AddHighScore(playerStats);
                 }
             }
         }
@@ -174,6 +201,64 @@ namespace GUI_App
                     }
                 }
             }
+        }
+    }
+
+    public static class Prompt
+    {
+        public static string ShowDialog(string text, string caption)
+        {
+            // Create a new Form instance for the prompt dialog
+            Form prompt = new Form()
+            {
+                // Set the dialog form's border style to FixedDialog. Set the dialog form's title or caption. Set the dialog form's position to the center of the screen
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                Text = caption,
+                StartPosition = FormStartPosition.CenterScreen
+            };
+
+            // Create a label to display the text
+            Label textLabel = new Label()
+            {
+                // Automatically adjust the label's size based on the text content. Set the position of the label within the form. Set the text to be displayed on the label
+                AutoSize = true,
+                Location = new Point(50, 20),
+                Text = text
+            };
+
+            // Create a text box for the user input
+            TextBox textBox = new TextBox()
+            {
+                // Set the position of the text box within the form. Set the width of the text box
+                Location = new Point(100, 50),  
+                Width = 100
+            };
+
+            // Create a button for submitting the input
+            Button confirmation = new Button()
+            {
+                // Set the text to be displayed on the button. Set the position of the button within the form. Set the dialog result when the button is clicked
+                Text = "SUBMIT",  
+                Location = new Point(115, 100),
+                DialogResult = DialogResult.OK
+            };
+
+            // Associate a click event handler with the button to close the dialog form
+            confirmation.Click += (sender, e) => { prompt.Close(); };
+
+            // Set the size of the dialog form
+            prompt.ClientSize = new Size(300, 150);
+
+            // Add the controls to the dialog form
+            prompt.Controls.Add(textLabel);
+            prompt.Controls.Add(textBox);
+            prompt.Controls.Add(confirmation);
+
+            // Set the default button for the form to the confirmation button
+            prompt.AcceptButton = confirmation;
+
+            // Show the dialog form and return the user's input if the result is OK, otherwise return an empty string
+            return prompt.ShowDialog() == DialogResult.OK ? textBox.Text : "";
         }
     }
 }

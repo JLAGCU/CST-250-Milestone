@@ -7,5 +7,8 @@
     <Compile Update="Game Form.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="High Score Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

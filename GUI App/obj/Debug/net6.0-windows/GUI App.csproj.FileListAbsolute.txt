@@ -20,3 +20,4 @@ C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debu
 C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\GUI App.genruntimeconfig.cache
 C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\ref\GUI App.dll
 C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\GUI_App.Properties.Resources.resources
+C:\Users\j4red\OneDrive\Documents\GCU\CST-150\CST-250 Milestone\GUI App\obj\Debug\net6.0-windows\GUI_App.High_Score_Form.resources
